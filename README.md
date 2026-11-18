@@ -19,7 +19,7 @@ An open Agent Skill that puts an idea or competing solutions on trial. Two advoc
 | Your advocate | Presents the case for the proposal and brings the strongest objection or a settlement offer back to you. |
 | Opposing advocate | Presents the strongest reason to reject or defer the proposal and responds to your side. |
 | 12 jurors | Consider both sides. Each submits a private vote, the reasoning both ways, and what could change the decision. |
-| Judge | Reports the count and explains the jury's conclusion, the strongest objection, and the next step. |
+| Judge | Issues a closing protocol with the arguments for, the arguments against, and the decision, including the tally when there was a vote. |
 
 The hearing opens with the question, proposals, and evidence and shows both advocates' positions. You can reply, continue to the jury, or accept a settlement. If voting proceeds, you see which perspectives are on the panel and the totals per proposal. Seven votes decide a proposal and a 6–6 split stays unresolved.
 
@@ -62,7 +62,7 @@ For a live check or a comparison with a shorter critical prompt, use the [pilot 
 
 הבורד יכול להציע להתחיל מחשבון אחד, להציג הדגמה או לאפשר למשתמש להמשיך את ההרשמה מאוחר יותר. שני עורכי הדין בוחנים כל חלופה, ואותם 12 מושבעים מצביעים בנפרד על כל אחת.
 
-בשני המסלולים תראה את שאלת ההכרעה, מה ידוע, מה עוד חסר ומי טוען בכל צד. עורך הדין שלך נותן לך הזדמנות לענות או לקבל פשרה. אם מגיעים להצבעה, יוצג הרכב המושבעים לפי תפקידים, והקולות ייספרו במצטבר. השופט מסביר מה הכריע ומה כדאי לעשות עכשיו.
+בשני המסלולים תראה את שאלת ההכרעה, מה ידוע, מה עוד חסר ומי טוען בכל צד. עורך הדין שלך נותן לך הזדמנות לענות או לקבל פשרה. אם מגיעים להצבעה, יוצג הרכב המושבעים לפי תפקידים, והקולות ייספרו במצטבר. בסיום השופט מציג פרוטוקול עם **טיעונים בעד, טיעונים נגד והחלטה מנומקת** לכל הצעה שנדונה.
 
 אחרי ההתקנה, אפשר להעתיק אחת מהדוגמאות ולהתחיל אותה ב־`$idea-court` ב־Codex או ב־`/idea-court` ב־Claude Code. הסקיל ינהל את הדיון בשפה שלך.
 

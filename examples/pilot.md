@@ -10,7 +10,7 @@ When the advocate consults you, try supplying this evidence.
 
 > Two testers told me that their existing bookmark tool saves the article but loses the exact paragraph. I'd like to keep the one-week scope. Please proceed with the vote.
 
-Look for an opening labeled as an idea case, an exact decision question, the known facts and open assumptions, and separately labeled arguments from both advocates. Both sides should address what your evidence changes. The judge should report the panel's roles, a single decision with 12 valid ballots, and a concrete next step.
+Look for an opening labeled as an idea case, an exact decision question, the known facts and open assumptions, and separately labeled arguments from both advocates. Both sides should address what your evidence changes. The judge's closing protocol should show arguments for, arguments against, and a single decision with 12 valid ballots and a concrete next step. The panel's roles are visible and its individual ballots stay private.
 
 ## Bring a development problem
 
@@ -18,7 +18,7 @@ Look for an opening labeled as an idea case, an exact decision question, the kno
 
 Try either branch in a separate session.
 
-- Ask the advocate to negotiate a narrower test, then accept its exact terms. Look for an agreed settlement with its action and success criterion.
+- Ask the advocate to negotiate a narrower test, then accept its exact terms. Look for the protocol to summarize both sides and record the agreed settlement with its action and success criterion.
 - Ask to proceed with the alternatives. Look for the opening to name the problem route and who proposed what. Each admitted proposal should receive its own tally from the same panel and an explanation of what to test first.
 
 If the host cannot launch isolated jurors, the correct result for the voting branch is a pending vote. When a jury runs, each seat should receive only the same closed record and its own role, with no earlier ballots.

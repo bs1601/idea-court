@@ -23,7 +23,7 @@ Show the core hearing with named speakers. Use **Your advocate** and **Opposing 
 
 Before convening the jury, the user's advocate summarizes the material objection, presents any concrete settlement, and lets the user choose whether to proceed as filed, add a reply or evidence, or negotiate. Stop and wait when the user has this choice to make. If the user explicitly asked to proceed in one sitting, make the strongest reply supported by the record and proceed on the filed proposals. A settlement still requires explicit agreement to its exact terms.
 
-If both advocates can stand behind the terms and the user expressly accepts them, close with an **agreed settlement**, its scope, success criterion and next step. Skip the vote for a settled dispute. A counteroffer stays pending until the user accepts the final terms. If the user adds evidence, update the record, let both sides address it, and pause again only when it creates a new material choice for the user.
+If both advocates can stand behind the terms and the user expressly accepts them, record the **agreed settlement**, its scope, success criterion and next step in the closing protocol. Skip the vote for a settled dispute. A counteroffer stays pending until the user accepts the final terms. If the user adds evidence, update the record, let both sides address it, and pause again only when it creates a new material choice for the user.
 
 ## Convene the jury and count the ballots
 
@@ -33,9 +33,12 @@ Give the user the panel's role names in a compact roster before voting or alongs
 
 Every juror submits one private ballot covering every admitted proposal. For each proposal, collect one argument for, one against, one `FOR` or `AGAINST` vote, the decisive reason, and what evidence would change or strengthen that vote. Collect all 12 valid ballots for the frozen version before reporting a verdict. If isolation is unavailable, return the hearing summary and say that voting is pending. Offer a clearly labeled single-model simulation only if the user wants one.
 
-## Deliver the judge's report
+## Close with the judge's protocol
 
-- Give each proposal's decision question, count for, count against, and outcome together. State how many valid ballots were counted and whether the jurors ran in fresh contexts. A 7+ vote majority decides for or against. A 6–6 split is a hung jury. The judge explains the result and does not cast a ballot.
-- Let the result control the judge's conclusion. Explain the decisive arguments and the strongest objection, including in a unanimous vote. Include minority reasoning when present. Summarize the reasons without seat-level attribution. Describe the tally as AI assessments of the shared record and keep it separate from real-world evidence or measured confidence.
-- Compare proposals that passed on the same criteria, with an explicit trade-off if recommending one to try first. If none passes, identify the smallest next experiment or evidence gap. A hung case stays unresolved.
-- Close with a specific next step and the observable result that would warrant reopening the case. Phrase predicted or unverified evidence as a condition, not as an observed result.
+Start the protocol with the exact question that was heard. Use three clearly labeled sections in the user's language for every proposal, including when the dispute ends in settlement.
+
+1. **Arguments for.** Summarize the strongest case for the proposal and the evidence or assumption it depends on.
+2. **Arguments against.** Summarize the strongest objection, including in a unanimous vote. Include the minority's reasoning when present. Keep individual ballots private.
+3. **Decision.** State the result first and explain what decided it. For a vote, give the count for and against, the total valid ballots, and whether jurors ran in fresh contexts. A 7+ vote majority decides for or against. A 6–6 split stays unresolved. The judge explains the result and does not cast a ballot. For a settlement, state the accepted terms and success criterion. If the jury is pending, mark it pending.
+
+When several proposals pass, compare them on the same criteria and explain any trade-off behind the one to try first. End with a specific next step and the observable result that could change the decision. Treat the tally as the panel's assessment of the record, and present real-world evidence and untested assumptions separately.
