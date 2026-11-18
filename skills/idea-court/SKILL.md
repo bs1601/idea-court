@@ -5,35 +5,37 @@ description: "Put an idea or competing solutions to a development problem on tri
 
 # Idea Court
 
-Run a decision hearing in the user's language. The two advocates make the case, the user can respond or accept a settlement, 12 AI jurors decide, and the judge explains the outcome. Keep the reasoning tied to the user's actual decision and identify what evidence could change it.
+Run a decision hearing in the user's language. Act as clerk. Take the request, prepare a neutral case, and relay replies. Two advocates test the merits, 12 AI jurors decide, and a judge in a separate fresh context explains the result.
 
 ## Open the case
 
 - **Idea.** Frame a yes-or-no question at the scope the user asked for. If they ask whether an idea is worth building, put that decision to the jury. Present a smaller step as an alternative in the debate or as a settlement the user can accept. Give the proposal an ID such as `P1`.
 - **Problem.** If the user describes a difficulty, frame the decision around what they want to improve. Read [hearing.md](references/hearing.md) to build two or three proposals through a board of relevant roles or admit proposals the user supplies. Assign a stable ID to each proposal.
-- Capture the user's goal, constraints, existing evidence, and decision criteria in a short brief. Distinguish reported observations from assumptions. Ask only questions whose answers could change the decision. Wait for the answers if a meaningful hearing cannot proceed without them.
+- Prepare a neutral case brief. Include the decision, the proposal's intended outcome, constraints, material evidence, and evaluation criteria. Keep the submitter's identity, personal motives, preferred result, private chat, and previous verdicts with the clerk. Read the [case brief rules](references/hearing.md#prepare-a-neutral-case-brief) before sharing it. Ask only questions whose answers could change the decision.
 
 Show the opening brief to the user. Name the route, quote the exact decision question, and list what is known and what remains uncertain. In the problem route, show which board role or source proposed each alternative and what it would do.
 
 ## Hear both sides and consult the user
 
-Read [hearing.md](references/hearing.md). For each proposal, hear both advocates' opening cases, follow with a round of challenges and direct replies, then record both closing positions. For each material objection, capture the reason and evidence behind it, the direct answer, and what that answer leaves open. If evidence is missing, say what is missing and how it affects the case. Use the same criteria across proposals addressing the same problem.
+Read [hearing.md](references/hearing.md). Start each advocate in a fresh context using only the neutral brief and their role. Defense builds the strongest supported case. The challenging advocate examines claims and evidence, accepts a supported reply, and can conclude the proposal merits proceeding. Hear opening cases, challenges, direct replies, and closing positions. Use the same criteria across proposals addressing the same problem.
 
-Show the core hearing with named speakers. Use **Your advocate** and **Opposing advocate** or local equivalents, and include their most consequential disagreement. Be clear about who performed each role. When the coordinator voices both sides, describe them as roles played by the coordinator. If the host cannot display the brief and arguments while the hearing runs, present them before the verdict in the user-facing report.
+Show the core hearing with named speakers. Use **Defense** and **Challenging advocate** or local equivalents, and include the most consequential disagreement. If the host cannot display the brief and arguments while the hearing runs, present them before the verdict in the user-facing report.
 
-Before convening the jury, the user's advocate summarizes the material objection, presents any concrete settlement, and lets the user choose whether to proceed as filed, add a reply or evidence, or negotiate. Stop and wait when the user has this choice to make. If the user explicitly asked to proceed in one sitting, make the strongest reply supported by the record and proceed on the filed proposals. A settlement still requires explicit agreement to its exact terms.
+Before convening the jury, the clerk relays the defense's summary of the material objection and any concrete settlement offer. Let the user choose whether to proceed as filed, add a reply or evidence, or negotiate. Stop and wait when the user has this choice to make. If the user explicitly asked to proceed in one sitting, let defense finish its reply from the case record and proceed on the filed proposals. A settlement still requires explicit agreement to its exact terms.
 
-If both advocates can stand behind the terms and the user expressly accepts them, record the **agreed settlement**, its scope, success criterion and next step in the closing protocol. Skip the vote for a settled dispute. A counteroffer stays pending until the user accepts the final terms. If the user adds evidence, update the record and let both sides explain which objections it answers and which remain. Pause again only when it creates a new material choice for the user.
+If both advocates can stand behind the terms and the user expressly accepts them, relay the accepted terms and record the **agreed settlement**, its scope, success criterion and next step in the closing protocol. Skip the vote for a settled dispute. A counteroffer stays pending until the user accepts the final terms. If the user adds evidence, pass only the relevant fact or rebuttal, anonymized and accurately attributed. Let both sides explain which objections it answers and which remain.
 
 ## Convene the jury and count the ballots
 
-Read [jury.md](references/jury.md). Once the hearing is closed, freeze a versioned case packet and pick 12 distinct, case-relevant jury roles. Exclude the advocates and proposal authors. Give every juror the same packet and only their own role. Explicitly launch one fresh-context subagent per seat when the host supports it. Keep the ballot returns out of the shared packet and other jurors' contexts.
+Read [jury.md](references/jury.md). Once the hearing is closed, freeze the versioned neutral case with both advocates' actual arguments and replies. Give all 12 jurors that same record, with each juror's own role. Explicitly launch one fresh-context subagent per seat. Keep ballot returns out of the shared packet and other jurors' contexts.
 
 Give the user the panel's role names in a compact roster before voting or alongside the result. Keep the role list separate from individual ballot contents.
 
 Every juror submits one private ballot covering every admitted proposal. For each proposal, collect one argument for, one against, one `FOR` or `AGAINST` vote, the decisive reason, and what evidence would change or strengthen that vote. Collect all 12 valid ballots for the frozen version before reporting a verdict. If isolation is unavailable, return the hearing summary and say that voting is pending. Offer a clearly labeled single-model simulation only if the user wants one.
 
 ## Close with the judge's protocol
+
+Start a fresh-context judge with the same neutral case, the validated tally and anonymized jury reasoning, or the agreed terms for a settlement. Use the [judge's brief](references/jury.md#brief-the-judge). If fresh contexts are unavailable, explain which stages are pending and label any requested single-context walkthrough as a simulation.
 
 Start the protocol with the exact question that was heard. Use three clearly labeled sections in the user's language for every proposal, including when the dispute ends in settlement.
 

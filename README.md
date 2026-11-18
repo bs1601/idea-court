@@ -16,12 +16,14 @@ An open Agent Skill that puts an idea or competing solutions on trial. Two advoc
 | Role | Responsibility |
 | --- | --- |
 | Board | Proposes alternatives when you start with a problem. |
-| Your advocate | Presents the case for the proposal and brings the strongest objection or a settlement offer back to you. |
-| Opposing advocate | Presents the strongest reason to reject or defer the proposal and responds to your side. |
+| Defense | Makes the strongest evidence-backed case for the proposal. The clerk relays material objections and settlement offers to you. |
+| Challenging advocate | Tests the claims and evidence, and can accept the reply or change position. |
 | 12 jurors | Consider both sides. Each submits a private vote, the reasoning both ways, and what could change the decision. |
 | Judge | Pairs each material objection with its reply, states what remains open, and explains the decision and the tally. |
 
 The advocates present evidence, challenge each other's claims, and respond to those challenges in front of you. You can add your own reply, continue to the jury, or accept a settlement. If voting proceeds, you see which perspectives are on the panel and the totals per proposal. Seven votes decide a proposal and a 6–6 split stays unresolved.
+
+The clerk keeps the original chat private from the court roles. The advocates and jurors receive the proposal, constraints and relevant evidence in fresh contexts. The judge receives the same case and the validated result in another fresh context. The submitter's identity, personal motive, wanted outcome, and earlier verdicts stay with the clerk.
 
 A verdict in favor of development ends with a short brief you can give to a planning skill. It carries forward the scope, requirements, and unresolved objections.
 
@@ -65,6 +67,8 @@ For a live check or a comparison with a shorter critical prompt, use the [pilot 
 הבורד יכול להציע להתחיל מחשבון אחד, להציג הדגמה או לאפשר למשתמש להמשיך את ההרשמה מאוחר יותר. שני עורכי הדין בוחנים כל חלופה, ואותם 12 מושבעים מצביעים בנפרד על כל אחת.
 
 בשני המסלולים תראה את שאלת ההכרעה, מה ידוע ומה עוד חסר. עורך הדין שלך נותן לך הזדמנות לענות או לקבל פשרה. בסיום השופט מציג **טיעונים בעד, התנגדויות והתשובה לכל התנגדות מהותית, והחלטה מנומקת**. אם המושבעים בעד פיתוח, אפשר להעביר לסקיל תכנון את תקציר ההחלטה, הדרישות והסיכונים שנשארו פתוחים.
+
+מנהל הדיון מכין לשופט ולמושבעים תיק עם השאלה, ההצעה, הטיעונים והראיות. הפרטים על מי הגיש את הרעיון, מה האינטרס שלו ואיזו תשובה הוא רוצה נשארים בשיחה עם מנהל הדיון. השופט מקבל את התיק בהקשר נפרד ומסביר את הכרעת המושבעים.
 
 אחרי ההתקנה, אפשר להעתיק אחת מהדוגמאות ולהתחיל אותה ב־`$idea-court` ב־Codex או ב־`/idea-court` ב־Claude Code. הסקיל ינהל את הדיון בשפה שלך.
 

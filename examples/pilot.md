@@ -12,6 +12,8 @@ When the advocate consults you, try supplying this evidence.
 
 Both sides should question what the feedback supports. The two reports support the existence of a problem among those testers. Regular use remains an open question. Look for a direct reply to each material objection in the judge's protocol, a decision on the question asked, 12 valid ballots, and an explanation of how the open issues affected the result. The panel's roles are visible and its individual ballots stay private. If the verdict is for building, the development brief should carry forward the intended user, scope, and open adoption risk.
 
+To check the separation of contexts, tell the clerk which outcome you personally want and mention a previous verdict. The prompt sent to each advocate, juror and judge should omit those details and retain the original decision question and the relevant tester feedback.
+
 ## Bring a development problem
 
 > Five of eight trial users stopped during onboarding. Today we ask them to connect three accounts before they can see their first report. We can spend one sprint testing an improvement and we must still support all three connections eventually. I'm open to different approaches. Have the board propose solutions and run a hearing.

@@ -12,13 +12,13 @@ Use role descriptions as simulated perspectives. Avoid invented credentials, end
 - **Claude Code.** Use new non-fork subagents through the Agent tool. Use a foreground run when useful for reliably collecting one result at a time. A worktree controls file writes and is insufficient to establish a fresh conversation.
 - **Other Agent Skills hosts.** Use an equivalent fresh-context operation if it supports one run per seat with private returns. Consider host settings, tool availability, and user permissions. An AI agent may still receive host or project instructions. This protocol isolates jury ballots from one another, and the host may retain separate run transcripts.
 
-Send each juror only their seat ID, role, decision lens, the frozen packet, and the ballot instructions below. Direct each agent to evaluate from that record, use no tools or shared files, contact no other juror, and return only its ballot to the coordinator. Start every later seat or retry fresh without earlier outputs, even if the runs must be sequential. Do not report partial counts. Do not claim a vote was isolated if the host used shared history or its behavior is unknown.
+Send each juror only their seat ID, role, decision lens, the neutral frozen packet, and the ballot instructions below. Give no previous votes or verdicts, no indication who submitted the idea or what outcome they favor, and no preferred burden of proof. Ask jurors to weigh each side's claims on their merits. Direct each agent to evaluate from that record, use no tools or shared files, contact no other juror, and return only its ballot to the clerk. Start every later seat or retry fresh without earlier outputs, even if the runs must be sequential. Do not report partial counts. Do not claim a vote was isolated if the host used shared history or its behavior is unknown.
 
 If a ballot fails or is malformed, request one fresh retry with the same seat and packet. Keep successful ballots for that case version. If a seat remains unavailable, mark the vote pending and report how many valid ballots arrived. An explicitly requested single-model simulation may illustrate the process, with an unmistakable simulation label in its result and no claim of isolated voting.
 
 ## Ballot
 
-Request a JSON object like this from each juror, with an entry for every proposal ID in the packet. A `FOR` vote means the proposal merits the action at the stated scope. Missing evidence can justify `AGAINST` without asserting the proposal can never succeed.
+Request a JSON object like this from each juror, with an entry for every proposal ID in the packet. A `FOR` vote means the proposal merits the action at the stated scope. An `AGAINST` vote means it should be declined at that scope. Weigh the significance of the available evidence and the unresolved issues on both sides.
 
 ```json
 {
@@ -55,3 +55,9 @@ python "<path-to-skill>/scripts/tally.py" "<path-to-ballots.json>"
 Keep ballot data within the run. If a local file is necessary, use a temporary file outside the repository. The helper validates structure and counts votes. The coordinator is responsible for collecting independent runs and retaining the agreed proposal IDs and version.
 
 If Python is unavailable, verify the same invariants before counting manually. There must be one return from each of `J01` through `J12`, one vote for every proposal per seat, a shared case version, valid vote values and all four nonempty rationale fields. Apply the same majority and tie rules. Never use a fabricated tally to fill a missing vote.
+
+## Brief the judge
+
+Launch a new agent using the same fresh-context mechanism as the jurors. Pass only the frozen case, the validated tally and anonymized summaries of the decisive reasons and dissent. For a settlement, pass the agreed terms instead of a tally. Keep the clerk's private context, desired outcome, prior verdicts, individual ballots and seat assignments out of the judge's brief.
+
+Have the judge use this record without tools or additional context. The judge explains what led to the verdict and evaluates which objections were answered. The validated tally or agreed settlement determines the result; the judge supplies the reasons and any open conditions. If a fresh judge cannot be launched, report the count and record with the judge's explanation marked pending.
