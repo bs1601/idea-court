@@ -4,13 +4,13 @@ Use these cases to check the workflow after installing the skill. Prefix each pr
 
 ## Put an idea on trial
 
-> I'm considering a browser extension that saves quotes from articles into a research notebook. I have one week for validation and four prospective users who agreed to test. Should I spend that week building a small working prototype? Give me a chance to respond before the jury votes.
+> I want to build a browser extension that saves quotes from articles into a research notebook. Four prospective users agreed to test it. Is this extension worth building? Give me a chance to respond before the jury votes.
 
 When the advocate consults you, try supplying this evidence.
 
-> Two testers told me that their existing bookmark tool saves the article but loses the exact paragraph. I'd like to keep the one-week scope. Please proceed with the vote.
+> Two testers told me that their existing bookmark tool saves the article but loses the exact paragraph. Please proceed with the vote on whether the extension is worth building.
 
-Look for an opening labeled as an idea case, an exact decision question, the known facts and open assumptions, and separately labeled arguments from both advocates. Both sides should address what your evidence changes. The judge's closing protocol should show arguments for, arguments against, and a single decision with 12 valid ballots and a concrete next step. The panel's roles are visible and its individual ballots stay private.
+Both sides should question what the feedback supports. The two reports support the existence of a problem among those testers. Regular use remains an open question. Look for a direct reply to each material objection in the judge's protocol, a decision on the question asked, 12 valid ballots, and an explanation of how the open issues affected the result. The panel's roles are visible and its individual ballots stay private. If the verdict is for building, the development brief should carry forward the intended user, scope, and open adoption risk.
 
 ## Bring a development problem
 

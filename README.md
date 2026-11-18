@@ -8,7 +8,7 @@ An open Agent Skill that puts an idea or competing solutions on trial. Two advoc
 
 | What you bring | What happens first | What the jury decides |
 | --- | --- | --- |
-| **Idea.** “I want to build an extension that saves quotes from articles.” | Define the scope, for example one week to build a prototype. | Whether to take that specific step. |
+| **Idea.** “Is it worth building an extension that saves quotes from articles?” | Define the intended user and the problem the extension would solve. | Whether the idea is worth building. |
 | **Problem.** “Users leave during onboarding.” | The board proposes two or three solutions, or uses alternatives you bring. | Whether each solution merits the proposed action. The same jury assesses all of them on the same criteria. |
 
 ## Who does what
@@ -19,9 +19,11 @@ An open Agent Skill that puts an idea or competing solutions on trial. Two advoc
 | Your advocate | Presents the case for the proposal and brings the strongest objection or a settlement offer back to you. |
 | Opposing advocate | Presents the strongest reason to reject or defer the proposal and responds to your side. |
 | 12 jurors | Consider both sides. Each submits a private vote, the reasoning both ways, and what could change the decision. |
-| Judge | Issues a closing protocol with the arguments for, the arguments against, and the decision, including the tally when there was a vote. |
+| Judge | Pairs each material objection with its reply, states what remains open, and explains the decision and the tally. |
 
-The hearing opens with the question, proposals, and evidence and shows both advocates' positions. You can reply, continue to the jury, or accept a settlement. If voting proceeds, you see which perspectives are on the panel and the totals per proposal. Seven votes decide a proposal and a 6–6 split stays unresolved.
+The advocates present evidence, challenge each other's claims, and respond to those challenges in front of you. You can add your own reply, continue to the jury, or accept a settlement. If voting proceeds, you see which perspectives are on the panel and the totals per proposal. Seven votes decide a proposal and a 6–6 split stays unresolved.
+
+A verdict in favor of development ends with a short brief you can give to a planning skill. It carries forward the scope, requirements, and unresolved objections.
 
 ## Install
 
@@ -52,9 +54,9 @@ For a live check or a comparison with a shorter critical prompt, use the [pilot 
 
 ### מסלול 1 — יש לי רעיון
 
-> יש לי רעיון לתוסף ששומר ציטוטים ממאמרים. האם שווה להשקיע שבוע בבניית אב־טיפוס?
+> יש לי רעיון לתוסף ששומר ציטוטים ממאמרים. האם כדאי לבנות אותו?
 
-מנסחים שאלה אחת ברורה. עורך הדין שלך מציג את הטיעון בעד, הצד השני מציג את הטיעון נגד, ובסוף המושבעים מצביעים על הצעד שהוגדר.
+עורך הדין שלך מציג למה כדאי לבנות את הרעיון, הצד השני בוחן את ההנחות והראיות שלו, ושני הצדדים מגיבים זה לזה לפני שהמושבעים מצביעים.
 
 ### מסלול 2 — יש לי בעיה פתוחה
 
@@ -62,7 +64,7 @@ For a live check or a comparison with a shorter critical prompt, use the [pilot 
 
 הבורד יכול להציע להתחיל מחשבון אחד, להציג הדגמה או לאפשר למשתמש להמשיך את ההרשמה מאוחר יותר. שני עורכי הדין בוחנים כל חלופה, ואותם 12 מושבעים מצביעים בנפרד על כל אחת.
 
-בשני המסלולים תראה את שאלת ההכרעה, מה ידוע, מה עוד חסר ומי טוען בכל צד. עורך הדין שלך נותן לך הזדמנות לענות או לקבל פשרה. אם מגיעים להצבעה, יוצג הרכב המושבעים לפי תפקידים, והקולות ייספרו במצטבר. בסיום השופט מציג פרוטוקול עם **טיעונים בעד, טיעונים נגד והחלטה מנומקת** לכל הצעה שנדונה.
+בשני המסלולים תראה את שאלת ההכרעה, מה ידוע ומה עוד חסר. עורך הדין שלך נותן לך הזדמנות לענות או לקבל פשרה. בסיום השופט מציג **טיעונים בעד, התנגדויות והתשובה לכל התנגדות מהותית, והחלטה מנומקת**. אם המושבעים בעד פיתוח, אפשר להעביר לסקיל תכנון את תקציר ההחלטה, הדרישות והסיכונים שנשארו פתוחים.
 
 אחרי ההתקנה, אפשר להעתיק אחת מהדוגמאות ולהתחיל אותה ב־`$idea-court` ב־Codex או ב־`/idea-court` ב־Claude Code. הסקיל ינהל את הדיון בשפה שלך.
 

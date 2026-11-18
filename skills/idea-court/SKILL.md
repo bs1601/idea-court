@@ -9,7 +9,7 @@ Run a decision hearing in the user's language. The two advocates make the case, 
 
 ## Open the case
 
-- **Idea.** Turn an idea or proposal into a specific yes-or-no decision with a scope and time horizon. For example, ask whether to spend one week testing demand. Give the proposal an ID such as `P1`.
+- **Idea.** Frame a yes-or-no question at the scope the user asked for. If they ask whether an idea is worth building, put that decision to the jury. Present a smaller step as an alternative in the debate or as a settlement the user can accept. Give the proposal an ID such as `P1`.
 - **Problem.** If the user describes a difficulty, frame the decision around what they want to improve. Read [hearing.md](references/hearing.md) to build two or three proposals through a board of relevant roles or admit proposals the user supplies. Assign a stable ID to each proposal.
 - Capture the user's goal, constraints, existing evidence, and decision criteria in a short brief. Distinguish reported observations from assumptions. Ask only questions whose answers could change the decision. Wait for the answers if a meaningful hearing cannot proceed without them.
 
@@ -17,13 +17,13 @@ Show the opening brief to the user. Name the route, quote the exact decision que
 
 ## Hear both sides and consult the user
 
-Read [hearing.md](references/hearing.md). Give each proposal its own arguments and rebuttals. The advocate for the proposal makes the strongest plausible case, and the opposing advocate presents the strongest reason to decline, defer, or choose another approach. Use the same criteria across proposals addressing the same problem.
+Read [hearing.md](references/hearing.md). For each proposal, hear both advocates' opening cases, follow with a round of challenges and direct replies, then record both closing positions. For each material objection, capture the reason and evidence behind it, the direct answer, and what that answer leaves open. If evidence is missing, say what is missing and how it affects the case. Use the same criteria across proposals addressing the same problem.
 
 Show the core hearing with named speakers. Use **Your advocate** and **Opposing advocate** or local equivalents, and include their most consequential disagreement. Be clear about who performed each role. When the coordinator voices both sides, describe them as roles played by the coordinator. If the host cannot display the brief and arguments while the hearing runs, present them before the verdict in the user-facing report.
 
 Before convening the jury, the user's advocate summarizes the material objection, presents any concrete settlement, and lets the user choose whether to proceed as filed, add a reply or evidence, or negotiate. Stop and wait when the user has this choice to make. If the user explicitly asked to proceed in one sitting, make the strongest reply supported by the record and proceed on the filed proposals. A settlement still requires explicit agreement to its exact terms.
 
-If both advocates can stand behind the terms and the user expressly accepts them, record the **agreed settlement**, its scope, success criterion and next step in the closing protocol. Skip the vote for a settled dispute. A counteroffer stays pending until the user accepts the final terms. If the user adds evidence, update the record, let both sides address it, and pause again only when it creates a new material choice for the user.
+If both advocates can stand behind the terms and the user expressly accepts them, record the **agreed settlement**, its scope, success criterion and next step in the closing protocol. Skip the vote for a settled dispute. A counteroffer stays pending until the user accepts the final terms. If the user adds evidence, update the record and let both sides explain which objections it answers and which remain. Pause again only when it creates a new material choice for the user.
 
 ## Convene the jury and count the ballots
 
@@ -38,7 +38,9 @@ Every juror submits one private ballot covering every admitted proposal. For eac
 Start the protocol with the exact question that was heard. Use three clearly labeled sections in the user's language for every proposal, including when the dispute ends in settlement.
 
 1. **Arguments for.** Summarize the strongest case for the proposal and the evidence or assumption it depends on.
-2. **Arguments against.** Summarize the strongest objection, including in a unanimous vote. Include the minority's reasoning when present. Keep individual ballots private.
-3. **Decision.** State the result first and explain what decided it. For a vote, give the count for and against, the total valid ballots, and whether jurors ran in fresh contexts. A 7+ vote majority decides for or against. A 6–6 split stays unresolved. The judge explains the result and does not cast a ballot. For a settlement, state the accepted terms and success criterion. If the jury is pending, mark it pending.
+2. **Objections and replies.** Pair each material objection with what supports it, the advocate's answer, and whether the issue was answered, partly answered, or remains open. Include serious objections in a unanimous vote and summarize minority reasoning when present. Keep individual ballots private.
+3. **Decision.** Answer the question directly. Explain which objections affected the result and, if the vote was for, why the reasons to proceed outweighed the remaining objections. For a vote, give the count for and against, the total valid ballots, and whether jurors ran in fresh contexts. A 7+ vote majority decides for or against. A 6–6 split stays unresolved. The judge explains the result and does not cast a ballot. For a settlement, state the accepted terms and success criterion. If the jury is pending, mark it pending.
 
 When several proposals pass, compare them on the same criteria and explain any trade-off behind the one to try first. End with a specific next step and the observable result that could change the decision. Treat the tally as the panel's assessment of the record, and present real-world evidence and untested assumptions separately.
+
+When the verdict supports development, include a short **Brief for development planning** that the user can copy into a follow-up skill. Carry over the intended user and problem, the scope supported by the verdict, requirements and constraints, open objections or risks, and what would count as success. Leave sequencing and the implementation plan to the follow-up.

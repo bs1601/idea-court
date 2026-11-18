@@ -8,15 +8,19 @@
 
 Example. A product manager proposes one account connection up front, a UX designer proposes a preview with sample data, and a developer proposes resumable setup. Each is a different way to address abandonment during onboarding.
 
-## Argue the cases
+## Conduct the debate
 
-For each proposal, make both arguments address the same scope. A good opposition identifies a reason the proposal itself could fail, even if a competing proposal also has merit.
+For each proposal, keep both advocates focused on the same decision. Use an exchange in which each side engages with the other's case.
 
-- The advocate for the proposal explains why it could achieve the goal, the strongest supporting evidence, and the principal assumption it depends on.
-- The opposing advocate identifies the most consequential failure mode, timing concern, opportunity cost, or unsupported assumption. Include a feasible test or narrower alternative when one follows from the objection.
-- Give each side a short response to the other's strongest point. Use further exchanges only to resolve material disagreements. Missing evidence remains unknown. User-reported evidence retains that attribution.
+1. **Opening cases.** Your advocate explains why the proposal could achieve the goal. The opposing advocate explains the most consequential reason it could fail or fall short. Each links a claim to evidence in the record, or states the assumption behind it.
+2. **Challenges and replies.** The opposing advocate challenges the strongest supporting claim or its evidence. Your advocate responds to that specific challenge and questions an assumption or piece of evidence on the other side. The opposing advocate answers, conceding what was established and explaining any remaining limits. Use another exchange when it could change the decision.
+3. **Closing positions.** After the user consultation, record each side's best case and what each side still disputes. For every objection that could change the decision or the development scope, record its basis, the direct reply, and its status. Mark it answered when the record supports the reply, partly answered when the reply addresses only part of the concern, and open when important evidence or an answer is missing.
+
+Attribute evidence to its source. Separate observations, user reports, inferences, and assumptions. If the record contains little evidence, say what each side is reasoning from and what could verify it. Ask for a missing fact during the consultation when it could change the outcome.
 
 When representing the user, preserve their actual position. In a board hearing the advocate can steelman each proposal separately without implying the user endorses any of them.
+
+Example. The opposing advocate argues that two reports of lost quotes do not show that readers will use a new extension regularly. Your advocate replies that the reports support the existence of a specific problem and that the extension directly addresses it. The opposing advocate accepts that a problem has been reported and keeps the adoption objection open. The record should show both what the reports support and what still needs to be learned.
 
 ## Consult the user
 
@@ -28,4 +32,4 @@ A proposal to settle should identify the action, who would take it, the time or 
 
 ## Freeze the shared record
 
-Include the case/version ID, the decision, priorities, constraints, the admitted proposal IDs and success criteria, evidence with its status, both sides' closing arguments, and the user's response. Give every voting juror the same version. Keep draft scores, preferences, poll counts, and individual ballots out of the packet.
+Include the case/version ID, the decision, priorities, constraints, the admitted proposal IDs and success criteria, evidence with its source and status, the material objections and replies, both sides' closing positions, and the user's response. Give every voting juror the same version. Keep draft scores, preferences, poll counts, and individual ballots out of the packet.
