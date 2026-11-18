@@ -2,12 +2,26 @@
 
 An open Agent Skill that puts an idea or competing solutions on trial. Two advocates argue the case, you get to respond, 12 AI jurors vote in separate contexts, and a judge explains the verdict and what could change it.
 
-## When to use it
+[הסבר ושתי דוגמאות בעברית](#עברית)
 
-- **You have an idea.** Put a specific decision on trial, such as whether to spend a week validating demand for a new app.
-- **You have a problem.** A board of relevant roles proposes two or three ways forward. You can also submit proposals you've already received. The same jury evaluates each proposal on its own merits.
+## Two ways to open a case
 
-Your advocate brings material objections and any proposed settlement back to you before the vote. An agreed settlement closes the dispute. Otherwise each juror submits both a reason for and a reason against, a vote, and a condition that could change it. Seven votes decide a proposal and a 6–6 split stays unresolved.
+| What you bring | What happens first | What the jury decides |
+| --- | --- | --- |
+| **Idea.** “I want to build an extension that saves quotes from articles.” | Define the scope, for example one week to build a prototype. | Whether to take that specific step. |
+| **Problem.** “Users leave during onboarding.” | The board proposes two or three solutions, or uses alternatives you bring. | Whether each solution merits the proposed action. The same jury assesses all of them on the same criteria. |
+
+## Who does what
+
+| Role | Responsibility |
+| --- | --- |
+| Board | Proposes alternatives when you start with a problem. |
+| Your advocate | Presents the case for the proposal and brings the strongest objection or a settlement offer back to you. |
+| Opposing advocate | Presents the strongest reason to reject or defer the proposal and responds to your side. |
+| 12 jurors | Consider both sides. Each submits a private vote, the reasoning both ways, and what could change the decision. |
+| Judge | Reports the count and explains the jury's conclusion, the strongest objection, and the next step. |
+
+The hearing opens with the question, proposals, and evidence and shows both advocates' positions. You can reply, continue to the jury, or accept a settlement. If voting proceeds, you see which perspectives are on the panel and the totals per proposal. Seven votes decide a proposal and a 6–6 split stays unresolved.
 
 ## Install
 
@@ -36,9 +50,21 @@ For a live check or a comparison with a shorter critical prompt, use the [pilot 
 
 ## עברית
 
-**בית משפט לרעיונות.** מביאים רעיון או בעיה פתוחה. עורך הדין שלך והצד השני מציגים טיעונים, ויש לך הזדמנות לענות או לאשר פשרה. אם ממשיכים למשפט, 12 מושבעי AI רלוונטיים מצביעים בהקשרים נפרדים, והשופט מסביר מה הכריע ומה כדאי לבדוק.
+### מסלול 1 — יש לי רעיון
 
-אחרי ההתקנה, נסה לכתוב ב־Codex ״`$idea-court` יש לי רעיון לתוסף. תעמיד אותו למשפט״. ב־Claude Code השתמש ב־`/idea-court`. הסקיל ינהל את הדיון בשפה שלך.
+> יש לי רעיון לתוסף ששומר ציטוטים ממאמרים. האם שווה להשקיע שבוע בבניית אב־טיפוס?
+
+מנסחים שאלה אחת ברורה. עורך הדין שלך מציג את הטיעון בעד, הצד השני מציג את הטיעון נגד, ובסוף המושבעים מצביעים על הצעד שהוגדר.
+
+### מסלול 2 — יש לי בעיה פתוחה
+
+> משתמשים נוטשים בהרשמה כשמבקשים מהם לחבר שלושה חשבונות. מה כדאי לנסות?
+
+הבורד יכול להציע להתחיל מחשבון אחד, להציג הדגמה או לאפשר למשתמש להמשיך את ההרשמה מאוחר יותר. שני עורכי הדין בוחנים כל חלופה, ואותם 12 מושבעים מצביעים בנפרד על כל אחת.
+
+בשני המסלולים תראה את שאלת ההכרעה, מה ידוע, מה עוד חסר ומי טוען בכל צד. עורך הדין שלך נותן לך הזדמנות לענות או לקבל פשרה. אם מגיעים להצבעה, יוצג הרכב המושבעים לפי תפקידים, והקולות ייספרו במצטבר. השופט מסביר מה הכריע ומה כדאי לעשות עכשיו.
+
+אחרי ההתקנה, אפשר להעתיק אחת מהדוגמאות ולהתחיל אותה ב־`$idea-court` ב־Codex או ב־`/idea-court` ב־Claude Code. הסקיל ינהל את הדיון בשפה שלך.
 
 ## License
 
