@@ -1,0 +1,4 @@
+interface:
+  display_name: "Idea Court"
+  short_description: "Test ideas with a debate and a 12-member jury"
+  default_prompt: "Use $idea-court to open a case for my idea or development problem."
