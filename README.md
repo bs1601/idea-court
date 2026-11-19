@@ -27,16 +27,26 @@ The clerk keeps the original chat private from the court roles. The advocates an
 
 ## Install
 
-1. On GitHub, open **Code → Download ZIP** and extract it. If you prefer Git, run `git clone https://github.com/bs1601/idea-court.git`.
-2. Copy the entire [`skills/idea-court`](skills/idea-court/) folder into the matching skills directory below. Create the parent directory if needed. At the destination, `idea-court/SKILL.md` should be next to the `references/` and `scripts/` folders.
-3. Start a new session in the project where you installed the skill. Use the command in the last column, followed by your idea.
+Paste the prompt for your client into a chat.
 
-| Client | Inside one project | Across local projects | Invoke |
-| --- | --- | --- | --- |
-| Codex | `.agents/skills/idea-court/` | `~/.agents/skills/idea-court/` | `$idea-court` |
-| Claude Code | `.claude/skills/idea-court/` | `~/.claude/skills/idea-court/` | `/idea-court` |
+**Codex**
 
-Try `$idea-court Is it worth launching a weekly newsletter for freelance designers?` in Codex, or start the same prompt with `/idea-court` in Claude Code. [Example hearing](examples/pilot.md)
+```text
+Use $skill-installer with --method git to install Idea Court from
+https://github.com/bs1601/idea-court/tree/main/skills/idea-court
+```
+
+**Claude Code**
+
+```text
+Install Idea Court from
+https://github.com/bs1601/idea-court/tree/main/skills/idea-court
+Fetch it with Git, copy the entire skill folder into this project's .claude/skills/idea-court/, and verify that SKILL.md is there.
+```
+
+Once installed, open a new chat and try `$idea-court Is it worth launching a weekly newsletter for freelance designers?` in Codex, or start with `/idea-court` in Claude Code. [Example hearing](examples/pilot.md)
+
+For manual installation, clone the repo and copy the entire [`skills/idea-court`](skills/idea-court/) folder. The project destination is `.agents/skills/idea-court/` in Codex or `.claude/skills/idea-court/` in Claude Code. For all local projects, use `~/.agents/skills/idea-court/` or `~/.claude/skills/idea-court/`, respectively.
 
 A full hearing requires a host that can launch fresh-context subagents. If they are unavailable, the skill can prepare the case and leave voting pending. Python 3 is optional and runs the ballot counter. The skill uses your existing agent session and requires no separate account, server, or API key.
 
@@ -66,17 +76,30 @@ For a live check or a comparison with a shorter critical prompt, use the [exampl
 
 ### התקנה והרצה
 
-1. בראש הריפו ב־GitHub לוחצים **Code → Download ZIP** ומחלצים את הקובץ.
-2. מעתיקים את התיקייה `skills/idea-court` בשלמותה לתיקיית הסקילים בפרויקט. ב־Codex מעתיקים ל־`.agents/skills/`. ב־Claude Code מעתיקים ל־`.claude/skills/`. אם תיקיית היעד חסרה, יוצרים אותה. אחרי ההעתקה הנתיב צריך להסתיים ב־`idea-court/SKILL.md`.
-3. פותחים שיחה חדשה בפרויקט. ב־Codex כותבים `$idea-court` וב־Claude Code כותבים `/idea-court`, ואחר כך מוסיפים את הרעיון בשפה שלכם.
+מדביקים בשיחה את בקשת ההתקנה לכלי שבו משתמשים.
 
-למשל, אפשר להדביק ב־Codex את ההודעה הזאת. ב־Claude Code משתמשים ב־`/idea-court` בתחילת ההודעה.
+**Codex**
+
+```text
+התקן את Idea Court עם $skill-installer במצב --method git מהקישור הבא
+https://github.com/bs1601/idea-court/tree/main/skills/idea-court
+```
+
+**Claude Code**
+
+```text
+התקן את Idea Court מהקישור הבא
+https://github.com/bs1601/idea-court/tree/main/skills/idea-court
+משוך את הקבצים דרך Git, העתק את כל תיקיית הסקיל ל־.claude/skills/idea-court/ בפרויקט הזה ובדוק ש־SKILL.md נמצא שם.
+```
+
+אחרי ההתקנה פותחים שיחה חדשה. ב־Codex מתחילים ב־`$idea-court` וב־Claude Code ב־`/idea-court`, ואחר כך כותבים את הרעיון. זו דוגמה ל־Codex.
 
 ```text
 $idea-court האם כדאי לפתוח ניוזלטר שבועי למעצבים עצמאיים?
 ```
 
-להתקנה בכל הפרויקטים אפשר להעתיק את אותה תיקייה למיקום האישי לפי הטבלה למעלה. משפט מלא דורש שהכלי יוכל להפעיל סוכנים בהקשרים נפרדים.
+משפט מלא דורש שהכלי יוכל להפעיל סוכנים בהקשרים נפרדים.
 
 ## License
 
