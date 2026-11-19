@@ -1,27 +1,22 @@
-# Pilot cases
+# Example hearing
 
-Use these cases to check the workflow after installing the skill. Prefix each prompt with `$idea-court` in Codex or `/idea-court` in Claude Code.
+Use this case to check the workflow after installing the skill. Prefix the prompt with `$idea-court` in Codex or `/idea-court` in Claude Code.
 
 ## Put an idea on trial
 
-> I want to build a browser extension that saves quotes from articles into a research notebook. Four prospective users agreed to test it. Is this extension worth building? Give me a chance to respond before the jury votes.
+> Is it worth launching a weekly newsletter about pricing and contracts for freelance designers? Four freelance designers told me they would like to receive it. Give me a chance to respond before the jury votes.
 
 When the advocate consults you, try supplying this evidence.
 
-> Two testers told me that their existing bookmark tool saves the article but loses the exact paragraph. Please proceed with the vote on whether the extension is worth building.
+> The four requests came after they read a sample issue. Two mentioned the example pricing email as something they could use. Please proceed with the vote.
 
-Both sides should question what the feedback supports. The two reports support the existence of a problem among those testers. Regular use remains an open question. Look for a direct reply to each material objection in the judge's protocol, a decision on the question asked, 12 valid ballots, and an explanation of how the open issues affected the result. The panel's roles are visible and its individual ballots stay private. If the verdict is for building, the development brief should carry forward the intended user, scope, and open adoption risk.
+Both sides should question what the feedback supports. The requests show initial interest among those readers. Regular readership remains an open question. Look for a direct reply to each material objection in the judge's protocol, a decision on the question asked, 12 valid ballots, and an explanation of how the open issues affected the result. The panel's roles are visible and its individual ballots stay private.
 
-To check the separation of contexts, tell the clerk which outcome you personally want and mention a previous verdict. The prompt sent to each advocate, juror and judge should omit those details and retain the original decision question and the relevant tester feedback.
+To check the separation of contexts, tell the clerk which outcome you personally want and mention a previous verdict. The prompt sent to each advocate, juror and judge should omit those details and retain the original decision question and the relevant reader feedback.
 
-## Bring a development problem
+## Try the settlement branch
 
-> Five of eight trial users stopped during onboarding. Today we ask them to connect three accounts before they can see their first report. We can spend one sprint testing an improvement and we must still support all three connections eventually. I'm open to different approaches. Have the board propose solutions and run a hearing.
-
-Try either branch in a separate session.
-
-- Ask the advocate to negotiate a narrower test, then accept its exact terms. Look for the protocol to summarize both sides and record the agreed settlement with its action and success criterion.
-- Ask to proceed with the alternatives. Look for the opening to name the problem route and who proposed what. Each admitted proposal should receive its own tally from the same panel and an explanation of what to test first.
+In a separate session, open the newsletter case and ask the advocate about a settlement. If you accept the exact terms, the protocol should summarize both sides and record what you agreed.
 
 If the host cannot launch isolated jurors, the correct result for the voting branch is a pending vote. When a jury runs, each seat should receive only the same closed record and its own role, with no earlier ballots.
 

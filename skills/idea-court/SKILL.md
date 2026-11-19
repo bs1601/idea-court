@@ -1,6 +1,6 @@
 ---
 name: idea-court
-description: "Put an idea or competing solutions to a development problem on trial through opposing advocates, user consultation, and 12 separate AI juror ballots. Use when someone asks for Idea Court, a jury verdict, a structured challenge to an idea, or a hearing to compare solutions. בית משפט לרעיונות, חבר מושבעים, בחינת חלופות."
+description: "Put the user's idea on trial with evidence, opposing advocates, and 12 separate AI juror ballots. Use when the user asks for Idea Court, a jury verdict about an idea, or a structured hearing to decide if an idea is worth pursuing. בית משפט לרעיונות, חבר מושבעים, בחינת רעיון."
 ---
 
 # Idea Court
@@ -9,15 +9,14 @@ Run a decision hearing in the user's language. Act as clerk. Take the request, p
 
 ## Open the case
 
-- **Idea.** Frame a yes-or-no question at the scope the user asked for. If they ask whether an idea is worth building, put that decision to the jury. Present a smaller step as an alternative in the debate or as a settlement the user can accept. Give the proposal an ID such as `P1`.
-- **Problem.** If the user describes a difficulty, frame the decision around what they want to improve. Read [hearing.md](references/hearing.md) to build two or three proposals through a board of relevant roles or admit proposals the user supplies. Assign a stable ID to each proposal.
+- Frame a yes-or-no question about whether the idea is worth pursuing, at the scope the user asked for. If they describe a situation without proposing an idea, ask which idea they want heard. If they bring multiple ideas, give each a stable proposal ID such as `P1`.
 - Prepare a neutral case brief. Include the decision, the proposal's intended outcome, constraints, material evidence, and evaluation criteria. Keep the submitter's identity, personal motives, preferred result, private chat, and previous verdicts with the clerk. Read the [case brief rules](references/hearing.md#prepare-a-neutral-case-brief) before sharing it. Ask only questions whose answers could change the decision.
 
-Show the opening brief to the user. Name the route, quote the exact decision question, and list what is known and what remains uncertain. In the problem route, show which board role or source proposed each alternative and what it would do.
+Show the opening brief to the user. Quote the exact decision question and list what is known and what remains uncertain.
 
 ## Hear both sides and consult the user
 
-Read [hearing.md](references/hearing.md). Start each advocate in a fresh context using only the neutral brief and their role. Defense builds the strongest supported case. The challenging advocate examines claims and evidence, accepts a supported reply, and can conclude the proposal merits proceeding. Hear opening cases, challenges, direct replies, and closing positions. Use the same criteria across proposals addressing the same problem.
+Read [hearing.md](references/hearing.md). Start each advocate in a fresh context using only the neutral brief and their role. Defense builds the strongest supported case. The challenging advocate examines claims and evidence, accepts a supported reply, and can conclude the proposal merits proceeding. Hear opening cases, challenges, direct replies, and closing positions. Use the same criteria across ideas being considered together.
 
 Show the core hearing with named speakers. Use **Defense** and **Challenging advocate** or local equivalents, and include the most consequential disagreement. If the host cannot display the brief and arguments while the hearing runs, present them before the verdict in the user-facing report.
 
@@ -43,6 +42,4 @@ Start the protocol with the exact question that was heard. Use three clearly lab
 2. **Objections and replies.** Pair each material objection with what supports it, the advocate's answer, and whether the issue was answered, partly answered, or remains open. Include serious objections in a unanimous vote and summarize minority reasoning when present. Keep individual ballots private.
 3. **Decision.** Answer the question directly. Explain which objections affected the result and, if the vote was for, why the reasons to proceed outweighed the remaining objections. For a vote, give the count for and against, the total valid ballots, and whether jurors ran in fresh contexts. A 7+ vote majority decides for or against. A 6–6 split stays unresolved. The judge explains the result and does not cast a ballot. For a settlement, state the accepted terms and success criterion. If the jury is pending, mark it pending.
 
-When several proposals pass, compare them on the same criteria and explain any trade-off behind the one to try first. End with a specific next step and the observable result that could change the decision. Treat the tally as the panel's assessment of the record, and present real-world evidence and untested assumptions separately.
-
-When the verdict supports development, include a short **Brief for development planning** that the user can copy into a follow-up skill. Carry over the intended user and problem, the scope supported by the verdict, requirements and constraints, open objections or risks, and what would count as success. Leave sequencing and the implementation plan to the follow-up.
+When several ideas pass, compare their merits on the same criteria. End with the open questions and the evidence that could change the decision. Treat the tally as the panel's assessment of the record, and present real-world evidence and untested assumptions separately.

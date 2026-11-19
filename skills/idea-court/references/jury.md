@@ -2,7 +2,7 @@
 
 ## Select 12 seats
 
-Use IDs `J01` through `J12`. Give each seat a distinct reason to care and a specific decision lens. For an app, useful roles might include a prospective customer, a first-time user, a UI/UX designer, a developer with relevant implementation experience, a startup founder at an early stage, an experienced founder, and an investor. Fill the other seats based on the case, such as a buyer, support lead, integration owner, accessibility specialist, or domain practitioner. A technical incident can call for a substantially different panel.
+Use IDs `J01` through `J12`. Give each seat a distinct reason to care and a specific decision lens. Depending on the idea, useful roles might include a person in the intended audience, a domain practitioner, a financial backer, an accessibility specialist, or someone affected by the idea. Choose all 12 roles to fit the case.
 
 Use role descriptions as simulated perspectives. Avoid invented credentials, endorsements, or actual customer testimony. Keep role instructions neutral about the desired vote. The same 12 seats review all proposals in a case using the same decision criteria.
 
@@ -22,15 +22,15 @@ Request a JSON object like this from each juror, with an entry for every proposa
 
 ```json
 {
-  "case_id": "onboarding-v1",
+  "case_id": "newsletter-v1",
   "juror_id": "J03",
   "votes": {
     "P1": {
       "vote": "FOR",
-      "for_reason": "One connection reduces the work before a user sees data.",
-      "against_reason": "One data source may leave the result too sparse to use.",
-      "decisive_reason": "A limited experiment can measure usable first results.",
-      "change_condition": "I would vote against deployment if one source cannot produce the core result."
+      "for_reason": "Several people in the intended audience requested the next issue.",
+      "against_reason": "Interest in one issue may not sustain a weekly newsletter.",
+      "decisive_reason": "Requests after a sample issue are enough support for the idea at the proposed scope.",
+      "change_condition": "I would change my vote if the interested readers say they only wanted the sample topic."
     }
   }
 }
